@@ -1,0 +1,217 @@
+ /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+@include size;
+  
+    .hero-container {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: $color-variable;
+      text-shadow: -1px 0 2px #2f4d5a;
+    }
+  
+    h2 {
+      color: $color-variable;
+      margin-bottom: 50px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: -1px 0 2px #2f4d5a;
+    }
+  
+    .btn-get-started {
+      font-size: 36px;
+      display: inline-block;
+      padding: 4px 0;
+      border-radius: 50px;
+      transition: 0.3s ease-in-out;
+      margin: 10px;
+      width: 64px;
+      height: 64px;
+      text-align: center;
+      border: 2px solid $color-variable;
+      color: $color-variable;
+  
+      &:hover {
+        padding-top: 8px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+  
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # cartas-index
+  --------------------------------------------------------------*/
+  .navindex
+  {
+    text-align: center;
+    margin-top: 90px;
+    background-color: #016352;
+    h2
+    {
+      color: $color-variable;
+    }
+    .space{margin-top: 20px;}
+    .about{margin-block-end: 80px;}
+  }
+  .padreCard
+  {
+  
+      display:flex; 
+      flex-direction:column;
+      align-items:center; 
+  }
+  
+  /*--------------------------------------------------------------
+  # Marcas-index
+  --------------------------------------------------------------*/
+  .asideindex
+  {
+  
+    background-color: #000000;
+    text-align: center;
+    h2
+    {
+      color: $color-variable;
+    }
+  }
+  
+  .flexPadre {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* CONTENEDOR PADRE */
+  
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
+  @media (min-width: 350px) {
+    .gridPadre {
+      display: grid;
+      grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
+    }
+  }
+  
+  /* VERSIÓN DE TABLET  */
+  /* Medium	md	≥768px */
+  @media (min-width: 768px) {
+    .gridPadre {
+      column-gap: 5px;
+      row-gap: 8px;
+      grid: center;
+      grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+    }
+  }
+  
+  /* VERSIÓN DE ESCRITORIO  */
+  @media (min-width: 1024px) {
+    .gridPadre {
+      column-gap: 5px;
+      row-gap: 8px;
+      grid: center;
+      grid-template-areas: "uno dos tres" "cuatro cinco seis";
+    }
+  }
+  
+  .item {
+    border: 4px rgb(4, 248, 155) solid;
+    height: 220px;
+    width: 200px;
+    border-radius: 4px;
+  
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  
+  .primero {
+    background-image: url(../img/Motorola.jpg);
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: uno;
+  }
+  
+  .segundo {
+    /* background-color: #0011ff; */
+    background-image: url(../img/Iphone.jpg);
+    background-size: 260px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: dos;
+  }
+  
+  .tercero {
+    background-image: url(../img/Samsung.jpg);
+    background-size: 270px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: tres;
+  }
+  
+  .cuarto {
+    background-image: url(../img/lg-2.png);
+    background-size: 220px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: cuatro;
+  }
+  
+  .quinto {
+    background-image: url(../img/Xiaomi.png);
+    background-size: 800px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: cinco;
+  }
+  
+  .sexto {
+    background-image: url(../img/huawei.jpg);
+    background-size: 230px;
+    background-position-x: center;
+    background-position-y: center;
+    grid-area: seis;
+  }
+  
+

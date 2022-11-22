@@ -1,0 +1,21 @@
+/*------------------- PÁGINA DE PREGUNTAS  --------------*/
+
+.contenedorpreg
+{
+    @include size;
+  .mainpreg
+{
+  text-align: center;
+  display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  color:$color-variable;
+  button{margin-top: 10px;}
+  .preg
+  {
+    margin-top: 30px;
+  }
+}
+}
+
+/*FIN PÁGINA DE PREGUNTAS*/

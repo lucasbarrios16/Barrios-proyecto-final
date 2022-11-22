@@ -1,0 +1,102 @@
+/*----------------------FOOTER --------------------------------*/
+footer
+{
+  margin-top: 20px;
+  background-color: #000000;
+}
+.gridfooter
+{
+  .imgfoot
+  {
+    width: 130px;
+    height: 130px;
+  }
+  .redes
+  {
+
+    .link
+    {
+      color: #fff;
+    }
+    .img
+    {
+      margin-top: 10px;
+      width: 60px;
+      height: 30px;
+    }
+    .img2
+    {
+      
+      margin-top: 10px;
+      width: 40px;
+      height: 25px;
+    }
+    .direccion{margin-left: 5px;}
+    .instagram{margin-right: 7px;}
+  }
+
+  h2
+  {color: #ffffff;}
+  text-align: center;
+  .area1
+  {grid-area: area1;
+  margin-top: 30px;}
+  .area2
+  {grid-area: area2;}
+  .area3
+  {grid-area: area3;}
+}
+.mapadesitio
+{
+  ul {
+    list-style-type: none;
+     }
+  list-style-type: none;
+  .lista
+  {
+  color: #ffffff;
+  }
+}
+
+
+
+
+/* VERSIÓN CELULAR */
+/* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
+@media (max-width: 767px) and (min-width: 350px) {
+  .gridfooter {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 8px;
+    grid: center;
+    grid-template-areas: 
+    "area1" 
+    "area2" 
+    "area3";
+  }
+}
+
+/* VERSIÓN DE TABLET  */
+/* Medium	md	≥768px */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .gridfooter {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 8px;
+    grid: center;
+    grid-template-areas: "area1 area2 area3";
+  }
+}
+
+/* VERSIÓN DE ESCRITORIO  */
+@media  (max-width: 1600px) and (min-width: 1024px)  {
+  .gridfooter {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 8px;
+    grid: center;
+    grid-template-areas: "area1 area2 area3";
+  }
+}
+
+/* FIN FOOTER  */

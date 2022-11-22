@@ -1,0 +1,48 @@
+/*------------------------ PÁGINA NOSOTROS -------------------------------*/
+
+.mainosotros
+{
+  margin-top: 110px;
+  text-align: center;
+  color: $color-variable;
+
+  .cristian
+  {
+     grid-area: cristian; margin-top: 20px;  align-items: center;   display: flex;
+    flex-direction: column;
+    .imgn2
+    {height: 300px; width: 300px;}
+  }
+  .lucas
+  { 
+    grid-area: lucas; margin-top: 20px;  align-items: center;   display: flex;
+    flex-direction: column;
+    .imgn1
+    {height: 300px; width: 300px;}
+  } 
+
+  @media (max-width: 1600px) and (min-width: 1024px) {
+    .gridNosotros {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "cristian lucas";
+    }
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .gridNosotros {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "cristian lucas";
+    }
+  }
+  @media (max-width: 767px) and (min-width: 350px) {
+    .gridNosotros {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "cristian" "lucas";
+    }
+  }
+}

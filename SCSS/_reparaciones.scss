@@ -1,0 +1,115 @@
+
+/*------------------- PÁGINA DE REPARACIONES -------------*/
+.bodyrep{
+  @include size;
+  .contrep
+  {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+  
+  .flexrep {
+      display: flex;
+      justify-content: center;
+      .box
+      {
+        border: 3px rgb(4, 248, 155) solid;
+        height: 440px;
+        width: 340px;
+        border-radius: 3px;
+        background-color: #000;
+        .cram
+        {margin-top: 50px;}
+        .listah
+        {
+          margin-top: 20px;
+        }
+      } 
+      .software
+      {
+      grid-area: software;
+     
+      }
+      .hardware
+      {
+        grid-area: hardware;
+        
+      }
+      
+  }
+  }
+  
+  .asiderep
+  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     .contenedorep
+     {
+       display: flex;
+     flex-direction: column;
+     align-items: center;
+     .text{margin-top: 40px;}
+     }
+     .contenido
+     {
+       display: flex;
+     flex-direction: column;
+     align-items: center;
+     }
+  
+  }
+  }
+  /* CONTENEDOR PADRE */
+  
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
+  @media (min-width: 350px) {
+    .gridrep {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "hardware" 
+                           "software";
+    }
+  }
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
+  @media (min-width: 768px) {
+    .gridrep {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "hardware software";
+    }
+  }
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
+  @media (min-width: 1024px) {
+    .gridrep {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-areas: "hardware software";
+    }
+  }
+  
+  .asiderep
+  {
+    margin-top: 50px;
+    color: $color-variable;
+    text-align: center;
+  .contenedorep
+  {
+  
+    .contenido
+    { 
+      border: 3px rgb(2, 136, 160) solid;
+      height: 200px;
+      width: 350px;
+      border-radius: 3px;
+      background-color: #000;
+    }
+  }
+  }
+  /* FIN PÁGINA REPARACIÓN */
