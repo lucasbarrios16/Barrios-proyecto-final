@@ -1,6 +1,24 @@
 @charset "UTF-8";
+@import url(https://fonts.google.com/specimen/Electrolize?preview.text=MOUSELAB&preview.text_type=custom&query=electrolize);
 body {
   background-color: #000000;
+}
+
+p, a {
+  font-family: "Electrolize", sans-serif;
+}
+
+h2, h3 {
+  font-family: "Russo One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pindex {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 900;
 }
 
 /*--------------------------------------------------------------
@@ -78,41 +96,20 @@ body {
   }
 }
 /*--------------------------------------------------------------
-# cartas-index
---------------------------------------------------------------*/
-.navindex {
-  text-align: center;
-  margin-top: 90px;
-  background-color: #016352;
-}
-.navindex h2 {
-  color: rgb(255, 255, 255);
-}
-.navindex .space {
-  margin-top: 20px;
-}
-.navindex .about {
-  margin-block-end: 80px;
-}
-
-.padreCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*--------------------------------------------------------------
 # Marcas-index
 --------------------------------------------------------------*/
 .asideindex {
+  padding-top: 30px;
   background-color: #000000;
   text-align: center;
+  padding-bottom: 70px;
 }
 .asideindex h2 {
   color: rgb(255, 255, 255);
 }
 
 .flexPadre {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -123,6 +120,7 @@ body {
 @media (min-width: 350px) {
   .gridPadre {
     display: grid;
+    row-gap: 20px;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
   }
 }
@@ -130,8 +128,8 @@ body {
 /* Medium	md	≥768px */
 @media (min-width: 768px) {
   .gridPadre {
-    column-gap: 5px;
-    row-gap: 8px;
+    column-gap: 50px;
+    row-gap: 20px;
     grid: center;
     grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
   }
@@ -139,7 +137,7 @@ body {
 /* VERSIÓN DE ESCRITORIO  */
 @media (min-width: 1024px) {
   .gridPadre {
-    column-gap: 5px;
+    column-gap: 30px;
     row-gap: 8px;
     grid: center;
     grid-template-areas: "uno dos tres" "cuatro cinco seis";
@@ -159,8 +157,8 @@ body {
 }
 
 .primero {
-  background-image: url(../img/Motorola.jpg);
-  background-size: 400px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/Motorola.png);
+  background-size: 210px;
   background-position-x: center;
   background-position-y: center;
   grid-area: uno;
@@ -168,95 +166,473 @@ body {
 
 .segundo {
   /* background-color: #0011ff; */
-  background-image: url(../img/Iphone.jpg);
-  background-size: 260px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/apple.png);
+  background-size: 200px;
   background-position-x: center;
   background-position-y: center;
   grid-area: dos;
 }
 
 .tercero {
-  background-image: url(../img/Samsung.jpg);
-  background-size: 270px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/samsung.png);
+  background-size: 190px;
   background-position-x: center;
   background-position-y: center;
   grid-area: tres;
 }
 
 .cuarto {
-  background-image: url(../img/lg-2.png);
-  background-size: 220px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/LG.png);
+  background-size: 190px;
   background-position-x: center;
   background-position-y: center;
   grid-area: cuatro;
 }
 
 .quinto {
-  background-image: url(../img/Xiaomi.png);
-  background-size: 800px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/Xiaomi.png);
+  background-size: 190px;
   background-position-x: center;
   background-position-y: center;
   grid-area: cinco;
 }
 
 .sexto {
-  background-image: url(../img/huawei.jpg);
-  background-size: 230px;
+  background-image: url(../img/iconos-index/Marcas/Marcas/huawei.png);
+  background-size: 200px;
   background-position-x: center;
   background-position-y: center;
   grid-area: seis;
 }
 
+.spaceagua {
+  background-color: rgb(4, 248, 155);
+  padding-top: 3px;
+}
+
+/*--------------------------------------------------------------
+  # ¿Qué reparamos?-index
+  --------------------------------------------------------------*/
+.primerSeccion {
+  padding-top: 30px;
+  margin-top: 90px;
+  background-color: #009961;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 250px;
+}
+.primerSeccion .about {
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+  /* VERSIÓN DE ESCRITORIO  */
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+}
+.primerSeccion .about h2 {
+  color: black;
+}
+.primerSeccion .about .gridindex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.primerSeccion .about .gridindex h3 {
+  color: #000000;
+}
+.primerSeccion .about .gridindex .hijo {
+  margin-top: 10px;
+  border: 5px #dcf0ec solid;
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+}
+.primerSeccion .about .gridindex .garantia {
+  grid-area: garantia;
+}
+.primerSeccion .about .gridindex .garantia .icono1 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.primerSeccion .about .gridindex .garantia .lista {
+  text-align: left;
+  color: #000000;
+  margin-top: 80px;
+}
+.primerSeccion .about .gridindex .garantia .lista p {
+  font-size: 20px;
+}
+.primerSeccion .about .gridindex .servicio {
+  grid-area: servicio;
+}
+.primerSeccion .about .gridindex .servicio .icono2 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.primerSeccion .about .gridindex .servicio .lista {
+  text-align: left;
+  color: #000000;
+  margin-top: 80px;
+}
+.primerSeccion .about .gridindex .servicio .lista p {
+  font-size: 20px;
+}
+.primerSeccion .about .gridindex .repuestos {
+  grid-area: repuestos;
+}
+.primerSeccion .about .gridindex .repuestos .icono3 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.primerSeccion .about .gridindex .repuestos .lista {
+  text-align: left;
+  color: #000000;
+  margin-top: 80px;
+}
+.primerSeccion .about .gridindex .repuestos .lista p {
+  font-size: 20px;
+}
+@media (min-width: 350px) {
+  .primerSeccion .about .gridindex {
+    display: grid;
+    column-gap: 8px;
+    row-gap: 50px;
+    grid-template-areas: "repuestos" "servicio" "garantia";
+  }
+}
+@media (min-width: 860px) {
+  .primerSeccion .about .gridindex {
+    column-gap: 50px;
+    row-gap: 8px;
+    grid: center;
+    grid-template-areas: "repuestos servicio  garantia";
+  }
+}
+@media (max-width: 859px) and (min-width: 350px) {
+  .primerSeccion .about .repuestos, .primerSeccion .about .servicio {
+    margin-bottom: 240px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Conocé más sobre nuestras reparaciones-index
+--------------------------------------------------------------*/
+.segundaSeccion {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  color: white;
+  background-color: rgb(43, 48, 58);
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# ¿Qué ofrecemos?-index
+--------------------------------------------------------------*/
+.navindex {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: white;
+}
+.navindex .cuadro {
+  /* VERSIÓN CELULAR */
+  /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+  /* VERSIÓN DE ESCRITORIO  */
+}
+.navindex .cuadro h2 {
+  color: black;
+}
+.navindex .cuadro .gridindex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.navindex .cuadro .gridindex .hijo {
+  margin-top: 10px;
+  border: 5px #016352 solid;
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+}
+.navindex .cuadro .gridindex .garantia {
+  grid-area: garantia;
+}
+.navindex .cuadro .gridindex .garantia .icono1 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.navindex .cuadro .gridindex .servicio {
+  grid-area: servicio;
+}
+.navindex .cuadro .gridindex .servicio .icono2 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.navindex .cuadro .gridindex .repuestos {
+  grid-area: repuestos;
+}
+.navindex .cuadro .gridindex .repuestos .icono3 .imgrep {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+@media (min-width: 350px) {
+  .navindex .cuadro .gridindex {
+    display: grid;
+    grid: center;
+    column-gap: 8px;
+    row-gap: 50px;
+    grid-template-areas: "servicio" "repuestos" "garantia";
+  }
+}
+@media (min-width: 860px) {
+  .navindex .cuadro .gridindex {
+    column-gap: 50px;
+    row-gap: 8px;
+    grid: center;
+    grid-template-areas: "servicio repuestos garantia";
+  }
+}
+
+/*--------------------------------------------------------------
+# Space-index
+--------------------------------------------------------------*/
+.space {
+  padding-top: 7px;
+  background-color: #009961;
+}
+
+/*--------------------------------------------------------------
+# Consultá tu presupuesto-index
+--------------------------------------------------------------*/
+.terceraSeccion {
+  padding-bottom: 35px;
+  padding-top: 30px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+.terceraSeccion .boton4 {
+  width: 60%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 20px;
+}
+
 /*------------------------ PÁGINA NOSOTROS -------------------------------*/
-.mainosotros {
+.bodynos {
+  color: aliceblue;
+  background-color: rgb(0, 67, 111);
+}
+.bodynos .prueba {
+  padding-bottom: 40px;
+  text-align: center;
+  align-items: center;
+}
+.bodynos .prueba .boton3 {
+  width: 60%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 20px;
+}
+.bodynos .titnosotros {
   margin-top: 110px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
-.mainosotros .cristian {
-  grid-area: cristian;
-  margin-top: 20px;
+.bodynos .titnosotros .unpoco {
+  color: antiquewhite;
+}
+.bodynos .image {
+  width: 100%;
+  height: 110vh;
+  background: url("../img/imag/lab3.png") top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -90px;
+}
+.bodynos .herberg {
+  margin-top: 90px;
+  background-color: black;
+  color: #009961;
+}
+.bodynos .herberg .herb1 {
+  margin-left: 100px;
+  grid-area: herb1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bodynos .herberg .herb1 .bloque {
+  width: 500px;
+  height: 500px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 5px #009961 solid;
+}
+.bodynos .herberg .herb1 .bloque .carrousel {
   align-items: center;
+}
+.bodynos .herberg .herb2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  margin-right: 100px;
+  grid-area: herb2;
+}
+.bodynos .herberg .herb2 .parrafo {
+  color: white;
+}
+.bodynos .herberg .herb2 .boton2 {
+  width: 60%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #009961;
+  font-size: 20px;
+}
+.bodynos .herberg .herb2 .boton2:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.bodynos .herberg .herb2 .boton2:active {
+  transform: translateY(3px);
+}
+@media (max-width: 1600px) and (min-width: 1024px) {
+  .bodynos .herberg .herbcontenedor {
+    display: grid;
+    column-gap: 60px;
+    row-gap: 20px;
+    grid-template-areas: "herb1 herb2";
+  }
+}
+@media (max-width: 1023px) and (min-width: 601px) {
+  .bodynos .herberg .herbcontenedor {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: "herb2" "herb1";
+  }
+  .bodynos .herberg .herb1, .bodynos .herberg .herb2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) and (min-width: 350px) {
+  .bodynos .herberg .herbcontenedor {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: "herb2" "herb1";
+  }
+  .bodynos .herberg .herb1, .bodynos .herberg .herb2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .bodynos .herberg .herb1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .bodynos .herberg .herb1 .bloque {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 5px #009961 solid;
+  }
+}
+.bodynos .mainosotros {
+  padding-bottom: 65px;
+  margin-top: 25px;
+  text-align: center;
+  color: black;
+  background-color: aliceblue;
+  margin-bottom: 30px;
+}
+.bodynos .mainosotros .cristian {
+  grid-area: cristian;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
 }
-.mainosotros .cristian .imgn2 {
+.bodynos .mainosotros .cristian .imgn2 {
   height: 300px;
   width: 300px;
 }
-.mainosotros .lucas {
+.bodynos .mainosotros .lucas {
   grid-area: lucas;
-  margin-top: 20px;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
-.mainosotros .lucas .imgn1 {
+.bodynos .mainosotros .lucas .imgn1 {
   height: 300px;
   width: 300px;
 }
 @media (max-width: 1600px) and (min-width: 1024px) {
-  .mainosotros .gridNosotros {
+  .bodynos .mainosotros .gridNosotros {
     display: grid;
-    column-gap: 20px;
+    column-gap: 90px;
     row-gap: 20px;
     grid-template-areas: "cristian lucas";
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
-  .mainosotros .gridNosotros {
+  .bodynos .mainosotros .gridNosotros {
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
+    display: flex;
+    justify-content: center;
     grid-template-areas: "cristian lucas";
   }
 }
 @media (max-width: 767px) and (min-width: 350px) {
-  .mainosotros .gridNosotros {
+  .bodynos .mainosotros .gridNosotros {
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
     grid-template-areas: "cristian" "lucas";
+  }
+}
+@media (max-width: 767px) and (min-width: 350px) {
+  .bodynos .mainosotros .cristian {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) and (min-width: 350px) {
+  .bodynos .mainosotros .lucas {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -371,7 +747,14 @@ body {
   margin-top: 10px;
 }
 .contenedorpreg .mainpreg .preg {
+  font-size: 50px;
+}
+.contenedorpreg .mainpreg .aspreg {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contenedorpreg .mainpreg .sectpreg {
+  margin-bottom: 30px;
 }
 
 /*FIN PÁGINA DE PREGUNTAS*/
@@ -387,23 +770,21 @@ body {
 .bodyrep .contrep {
   color: #ffffff;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 .bodyrep .contrep .flexrep {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .bodyrep .contrep .flexrep .box {
   border: 3px rgb(4, 248, 155) solid;
-  height: 440px;
+  height: 660px;
   width: 340px;
   border-radius: 3px;
   background-color: #000;
 }
-.bodyrep .contrep .flexrep .box .cram {
-  margin-top: 50px;
-}
-.bodyrep .contrep .flexrep .box .listah {
+.bodyrep .contrep .flexrep .box .cram, .bodyrep .contrep .flexrep .box .listah, .bodyrep .contrep .flexrep .box .tran {
   margin-top: 20px;
 }
 .bodyrep .contrep .flexrep .software {
@@ -412,22 +793,32 @@ body {
 .bodyrep .contrep .flexrep .hardware {
   grid-area: hardware;
 }
+.bodyrep .contrep .flexrep .micro {
+  grid-area: micro;
+}
+.bodyrep .contrep .flexrep .imagenrep .imgshm {
+  width: 280px;
+  height: 280px;
+}
 .bodyrep .asiderep {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #009961;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .bodyrep .asiderep .contenedorep {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 5px black solid;
 }
-.bodyrep .asiderep .contenedorep .text {
-  margin-top: 40px;
-}
-.bodyrep .asiderep .contenido {
-  display: flex;
-  flex-direction: column;
+.bodyrep .asiderep .contenedorep .contenido {
   align-items: center;
 }
 
@@ -439,55 +830,52 @@ body {
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-areas: "hardware" "software";
+    grid-template-areas: "hardware" "software" "micro";
   }
 }
-/* VERSIÓN CELULAR */
-/* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
-@media (min-width: 768px) {
-  .gridrep {
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
-    grid-template-areas: "hardware software";
-  }
-}
-/* VERSIÓN CELULAR */
+/* VERSIÓN ESCRITORIO */
 /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
 @media (min-width: 1024px) {
   .gridrep {
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-areas: "hardware software";
+    grid-template-areas: "hardware software micro";
   }
 }
-.asiderep {
-  margin-top: 50px;
-  color: rgb(255, 255, 255);
+/* FIN PÁGINA REPARACIÓN*/
+.reparar {
   text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(43, 48, 58);
 }
-.asiderep .contenedorep .contenido {
-  border: 3px rgb(2, 136, 160) solid;
-  height: 200px;
-  width: 350px;
-  border-radius: 3px;
-  background-color: #000;
+.reparar a {
+  margin-top: 10px;
 }
 
 /* FIN PÁGINA REPARACIÓN */
 /*----------------------FOOTER --------------------------------*/
 footer {
-  margin-top: 20px;
+  padding-top: 20px;
   background-color: #000000;
+  padding-bottom: 20px;
 }
 
 .gridfooter {
+  text-align: left;
   text-align: center;
 }
 .gridfooter .imgfoot {
-  width: 130px;
-  height: 130px;
+  margin-top: 40px;
+  width: 230px;
+  height: 230px;
+}
+.gridfooter .redes {
+  text-align: left;
+  padding-left: 200px;
+  display: inline;
 }
 .gridfooter .redes .link {
   color: #fff;
@@ -495,12 +883,12 @@ footer {
 .gridfooter .redes .img {
   margin-top: 10px;
   width: 60px;
-  height: 30px;
+  height: 60px;
 }
 .gridfooter .redes .img2 {
   margin-top: 10px;
-  width: 40px;
-  height: 25px;
+  width: 55px;
+  height: 55px;
 }
 .gridfooter .redes .direccion {
   margin-left: 5px;
@@ -523,7 +911,12 @@ footer {
 }
 
 .mapadesitio {
+  text-align: left;
+  margin-top: 50px;
   list-style-type: none;
+}
+.mapadesitio .map {
+  text-align: left;
 }
 .mapadesitio ul {
   list-style-type: none;
@@ -573,10 +966,17 @@ footer {
   z-index: 997;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+#header .logonav {
+  margin-right: -110px;
+  width: 50px;
+  height: 50px;
+}
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 40, 40, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 #header .logo {
+  margin-left: 10px;
+  margin-right: 30px;
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -585,6 +985,8 @@ footer {
   letter-spacing: 0.5px;
 }
 #header .logo a {
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 #header .logo img {
@@ -595,6 +997,12 @@ footer {
   #header {
     border: 0;
     padding: 15px 0;
+  }
+}
+@media (max-width: 992px) and (min-width: 350px) {
+  .logonav {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 /* Get Startet Button */

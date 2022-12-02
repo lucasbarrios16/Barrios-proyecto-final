@@ -4,15 +4,24 @@
 
 
 #header {
+  .logonav
+  {
+    margin-right: -110px;
+    width: 50px;
+    height: 50px;
+  }
+
     transition: all 0.5s;
     z-index: 997;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   
     &.header-scrolled, &.header-inner-pages {
-      background: rgba(40, 40, 40, 0.9);
+      background: rgba(0, 0, 0, 0.9);
     }
   
     .logo {
+      margin-left: 10px;
+      margin-right: 30px;
       font-size: 28px;
       margin: 0;
       padding: 0;
@@ -21,6 +30,8 @@
       letter-spacing: 0.5px;
   
       a {
+        font-family: 'Russo One', sans-serif;
+        text-decoration: none;
         color: $color-variable;
       }
   
@@ -36,7 +47,13 @@
       padding: 15px 0;
     }
   }
-  
+  @media (max-width: 992px) and (min-width: 350px) {
+    .logonav {
+
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
   /* Get Startet Button */
   
   .get-started-btn {

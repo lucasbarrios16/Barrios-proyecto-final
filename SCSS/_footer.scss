@@ -1,18 +1,26 @@
 /*----------------------FOOTER --------------------------------*/
 footer
 {
-  margin-top: 20px;
+  padding-top: 20px;
   background-color: #000000;
+  padding-bottom: 20px;
+
 }
 .gridfooter
 {
   .imgfoot
   {
-    width: 130px;
-    height: 130px;
+    margin-top: 40px;
+    width: 230px;
+    height: 230px;
   }
+  text-align: left;
   .redes
   {
+    text-align: left;
+    padding-left: 200px;
+    display: inline;
+
 
     .link
     {
@@ -22,14 +30,14 @@ footer
     {
       margin-top: 10px;
       width: 60px;
-      height: 30px;
+      height: 60px;
     }
     .img2
     {
       
       margin-top: 10px;
-      width: 40px;
-      height: 25px;
+      width: 55px;
+      height: 55px;
     }
     .direccion{margin-left: 5px;}
     .instagram{margin-right: 7px;}
@@ -39,8 +47,10 @@ footer
   {color: #ffffff;}
   text-align: center;
   .area1
-  {grid-area: area1;
-  margin-top: 30px;}
+  {
+    grid-area: area1;
+    margin-top: 30px;
+  }
   .area2
   {grid-area: area2;}
   .area3
@@ -48,6 +58,9 @@ footer
 }
 .mapadesitio
 {
+  text-align: left;
+  margin-top: 50px;
+  .map{text-align: left;}
   ul {
     list-style-type: none;
      }

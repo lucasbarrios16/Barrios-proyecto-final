@@ -6,24 +6,22 @@
   {
     color: #ffffff;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 90px;
   
   .flexrep {
       display: flex;
       justify-content: center;
+      margin-top: 40px;
       .box
       {
         border: 3px rgb(4, 248, 155) solid;
-        height: 440px;
+        height: 660px;
         width: 340px;
         border-radius: 3px;
         background-color: #000;
-        .cram
-        {margin-top: 50px;}
-        .listah
-        {
-          margin-top: 20px;
-        }
+        .cram , .listah , .tran
+        {margin-top: 20px;}
+
       } 
       .software
       {
@@ -35,30 +33,49 @@
         grid-area: hardware;
         
       }
-      
+      .micro
+      {
+        grid-area: micro;
+      }
+      .imagenrep
+      {
+        .imgshm
+        {
+          width: 280px;
+          height: 280px;
+        }
+      }
   }
   }
   
   .asiderep
   {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     .contenedorep
-     {
-       display: flex;
-     flex-direction: column;
-     align-items: center;
-     .text{margin-top: 40px;}
-     }
-     .contenido
-     {
-       display: flex;
-     flex-direction: column;
-     align-items: center;
-     }
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: $color-variable;
+    text-align: center;
+    background-color: $color-nm1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .contenedorep
+    {
+      width: 500px;
+      height: 500px;
+      margin-top: 15px;
+      border-radius: 8px;
+      border: 5px black solid; 
+      
+      .contenido
+      {
+        align-items: center;  
+      }
+    }
   
   }
+
   }
   /* CONTENEDOR PADRE */
   
@@ -70,46 +87,33 @@
       column-gap: 20px;
       row-gap: 20px;
       grid-template-areas: "hardware" 
-                           "software";
+                           "software"
+                           "micro";
     }
   }
-  /* VERSIÓN CELULAR */
-  /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
-  @media (min-width: 768px) {
-    .gridrep {
-      display: grid;
-      column-gap: 20px;
-      row-gap: 20px;
-      grid-template-areas: "hardware software";
-    }
-  }
-  /* VERSIÓN CELULAR */
+  /* VERSIÓN ESCRITORIO */
+ 
   /* Si la pantalla tiene un mínimo de 768px ejecuto el siguiente código: */
   @media (min-width: 1024px) {
     .gridrep {
       display: grid;
       column-gap: 20px;
       row-gap: 20px;
-      grid-template-areas: "hardware software";
+      grid-template-areas: "hardware software micro";
     }
   }
   
-  .asiderep
+
+
+ /* FIN PÁGINA REPARACIÓN*/
+  .reparar
   {
-    margin-top: 50px;
-    color: $color-variable;
     text-align: center;
-  .contenedorep
-  {
-  
-    .contenido
-    { 
-      border: 3px rgb(2, 136, 160) solid;
-      height: 200px;
-      width: 350px;
-      border-radius: 3px;
-      background-color: #000;
-    }
-  }
+    color: $color-variable;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $gray;
+
+    a{margin-top: 10px;}
   }
   /* FIN PÁGINA REPARACIÓN */

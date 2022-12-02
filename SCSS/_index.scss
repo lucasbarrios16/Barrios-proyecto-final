@@ -77,37 +77,17 @@
     }
   }
   
-  /*--------------------------------------------------------------
-  # cartas-index
-  --------------------------------------------------------------*/
-  .navindex
-  {
-    text-align: center;
-    margin-top: 90px;
-    background-color: #016352;
-    h2
-    {
-      color: $color-variable;
-    }
-    .space{margin-top: 20px;}
-    .about{margin-block-end: 80px;}
-  }
-  .padreCard
-  {
-  
-      display:flex; 
-      flex-direction:column;
-      align-items:center; 
-  }
+ 
   
   /*--------------------------------------------------------------
   # Marcas-index
   --------------------------------------------------------------*/
   .asideindex
   {
-  
+    padding-top: 30px;
     background-color: #000000;
     text-align: center;
+    padding-bottom: 70px;
     h2
     {
       color: $color-variable;
@@ -115,6 +95,7 @@
   }
   
   .flexPadre {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
   }
@@ -126,6 +107,7 @@
   @media (min-width: 350px) {
     .gridPadre {
       display: grid;
+      row-gap: 20px;
       grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
     }
   }
@@ -134,8 +116,8 @@
   /* Medium	md	≥768px */
   @media (min-width: 768px) {
     .gridPadre {
-      column-gap: 5px;
-      row-gap: 8px;
+      column-gap: 50px;
+      row-gap: 20px;
       grid: center;
       grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
     }
@@ -144,7 +126,7 @@
   /* VERSIÓN DE ESCRITORIO  */
   @media (min-width: 1024px) {
     .gridPadre {
-      column-gap: 5px;
+      column-gap: 30px;
       row-gap: 8px;
       grid: center;
       grid-template-areas: "uno dos tres" "cuatro cinco seis";
@@ -166,8 +148,8 @@
   }
   
   .primero {
-    background-image: url(../img/Motorola.jpg);
-    background-size: 400px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/Motorola.png);
+    background-size: 210px;
     background-position-x: center;
     background-position-y: center;
     grid-area: uno;
@@ -175,43 +157,326 @@
   
   .segundo {
     /* background-color: #0011ff; */
-    background-image: url(../img/Iphone.jpg);
-    background-size: 260px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/apple.png);
+    background-size: 200px;
     background-position-x: center;
     background-position-y: center;
     grid-area: dos;
   }
   
   .tercero {
-    background-image: url(../img/Samsung.jpg);
-    background-size: 270px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/samsung.png);
+    background-size: 190px;
     background-position-x: center;
     background-position-y: center;
     grid-area: tres;
   }
   
   .cuarto {
-    background-image: url(../img/lg-2.png);
-    background-size: 220px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/LG.png);
+    background-size: 190px;
     background-position-x: center;
     background-position-y: center;
     grid-area: cuatro;
   }
   
   .quinto {
-    background-image: url(../img/Xiaomi.png);
-    background-size: 800px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/Xiaomi.png);
+    background-size: 190px;
     background-position-x: center;
     background-position-y: center;
     grid-area: cinco;
   }
   
   .sexto {
-    background-image: url(../img/huawei.jpg);
-    background-size: 230px;
+    background-image: url(../img/iconos-index/Marcas/Marcas/huawei.png);
+    background-size: 200px;
     background-position-x: center;
     background-position-y: center;
     grid-area: seis;
   }
   
+  .spaceagua{background-color: $verdeagua; padding-top: 3px;}
 
+/*--------------------------------------------------------------
+  # ¿Qué reparamos?-index
+  --------------------------------------------------------------*/
+
+.primerSeccion
+{
+    padding-top: 30px;
+    margin-top: 90px;
+    background-color: $color-nm1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 250px;
+    .about
+    {
+      h2
+      {
+        color: black;
+      }
+
+      .gridindex
+      {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+        h3{color: #000000;}
+        .hijo
+        {
+          margin-top: 10px;
+          border: 5px #dcf0ec solid;
+          height: 250px;
+          width: 250px;
+          border-radius: 4px;
+        }
+      
+        .garantia
+        {
+          
+          grid-area: garantia;
+          .icono1
+          {
+            .imgrep
+            {
+              margin-top: 10px;
+              width: 130px;
+              height: 130px;
+            }
+          }
+          .lista
+          {
+            text-align: left;
+            color: #000000;
+            margin-top: 80px;
+            p{font-size: 20px;}
+          }
+        }
+        .servicio
+        {
+          
+          grid-area: servicio; 
+          .icono2
+          {
+            .imgrep
+            {
+              margin-top: 10px;
+              width: 130px;
+              height: 130px;
+            }
+          }
+          .lista
+          {
+            text-align: left;
+            color: #000000;
+            margin-top: 80px;
+            p{font-size: 20px;}
+          }
+        }
+        .repuestos
+        {
+          grid-area: repuestos;
+          .icono3
+          {
+            .imgrep
+            {
+              margin-top: 10px;
+              width: 130px;
+              height: 130px;
+            }
+          }
+          
+          .lista
+          {
+            text-align: left;
+            color: #000000;
+            margin-top: 80px;
+            p{font-size: 20px;}
+          }        
+        }
+      }
+
+          /* VERSIÓN CELULAR */
+      /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+      @media (min-width: 350px) {
+        .gridindex {
+          display: grid;
+          column-gap: 8px;
+          row-gap: 50px;
+          grid-template-areas:  "repuestos" "servicio" "garantia";
+        }
+      }
+      
+      /* VERSIÓN DE ESCRITORIO  */
+      @media (min-width: 860px) {
+        .gridindex {
+          column-gap: 50px;
+          row-gap: 8px;
+          grid: center;
+          grid-template-areas: "repuestos servicio  garantia";
+        }
+      }
+
+                /* VERSIÓN CELULAR */
+      /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+      @media (max-width: 859px) and (min-width: 350px) {
+        .repuestos, .servicio {
+      margin-bottom: 240px;
+        }
+      }
+    }      
+}
+   /*--------------------------------------------------------------
+  # Conocé más sobre nuestras reparaciones-index
+  --------------------------------------------------------------*/
+  .segundaSeccion
+  {
+ 
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+    background-color: rgb(43, 48, 58);
+    text-align: center;
+  }
+   /*--------------------------------------------------------------
+  # ¿Qué ofrecemos?-index
+  --------------------------------------------------------------*/
+  .navindex
+  {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        background-color: white;
+
+      .cuadro
+      {
+        h2
+        {
+          color: black;
+        }
+
+
+        .gridindex
+        {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 60px;
+          .hijo
+          {
+            margin-top: 10px;
+            border: 5px #016352 solid;
+            height: 250px;
+            width: 250px;
+            border-radius: 4px;
+          }
+        
+          .garantia
+          {
+            
+            grid-area: garantia;
+            .icono1
+            {
+              .imgrep
+              {
+                margin-top: 10px;
+                width: 130px;
+                height: 130px;
+              }
+            }
+          }
+          .servicio
+          {
+            
+            grid-area: servicio; 
+            .icono2
+            {
+              .imgrep
+              {
+                margin-top: 10px;
+                width: 130px;
+                height: 130px;
+              }
+            }
+          }
+          .repuestos
+          {
+            grid-area: repuestos;
+            .icono3
+            {
+              .imgrep
+              {
+                margin-top: 10px;
+                width: 130px;
+                height: 130px;
+              }
+            }
+            
+              
+          }
+        }
+    
+          /* VERSIÓN CELULAR */
+      /* Si la pantalla tiene un mínimo de 350px ejecuto el siguiente código: */
+      @media (min-width: 350px) {
+        .gridindex {
+          display: grid;
+          grid: center;
+          column-gap: 8px;
+          row-gap: 50px;
+          grid-template-areas: "servicio" "repuestos" "garantia";
+        }
+      }
+      
+      /* VERSIÓN DE ESCRITORIO  */
+      @media (min-width: 860px) {
+        .gridindex {
+          column-gap: 50px;
+          row-gap: 8px;
+          grid: center;
+          grid-template-areas: "servicio repuestos garantia";
+        }
+      }
+      }
+  
+    
+   
+  }
+
+  
+
+    /*--------------------------------------------------------------
+  # Space-index
+  --------------------------------------------------------------*/
+  .space
+  {
+     
+    padding-top: 7px;
+    background-color: $color-nm1;
+  }
+
+     /*--------------------------------------------------------------
+  # Consultá tu presupuesto-index
+  --------------------------------------------------------------*/
+  .terceraSeccion
+{
+  padding-bottom: 35px;
+  padding-top: 30px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  .boton4
+  {
+    width: 60%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: $color-variable;
+    text-transform: uppercase;
+    background-color: black;
+    font-size: 20px;
+  }
+}

@@ -4,6 +4,10 @@ body
 }
 $color-nm1:#009961;
 $color-variable: rgb(255, 255, 255);
+$black:black;
+$gray:rgb(43, 48, 58);
+$verdeagua:rgb(4, 248, 155);
+
 @mixin size 
 {
   width: 100%;
@@ -13,5 +17,9 @@ $color-variable: rgb(255, 255, 255);
   position: relative;
   margin-bottom: -90px;  
 }
+p, a{font-family: 'Electrolize', sans-serif;}
+h2,h3{font-family: 'Russo One', sans-serif;}
+a{text-decoration: none}
+.pindex{font-family: 'Electrolize', sans-serif; font-weight: 900;}
 
 @import "index", "nosotros", "contacto","preguntas","reparaciones", "footer", "navbar" ;
